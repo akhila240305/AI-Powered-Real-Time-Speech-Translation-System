@@ -49,7 +49,7 @@ def youtube_to_wav(url, wav_path):
 
 @app.post("/translate")
 async def translate(
-    input_type: str = Form(...),     # mic | audio | video | youtube
+    input_type: str = Form(...),     
     file: UploadFile = File(None),
     youtube_url: str = Form(None),
     src_lang: str = Form("hi"),
@@ -73,8 +73,6 @@ async def translate(
 
     else:
         return {"error": "Invalid input type"}
-
-    # 🔥 Whisper loads audio itself (NO librosa)
     result = model.transcribe(wav, language=src_lang)
     text = result["text"]
 
