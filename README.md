@@ -1,4 +1,4 @@
-# AI-Powered Real-Time-Speech-Translation-System
+# AI-Powered-Real-Time-Speech-Translation-System
 
 This project implements an AI-powered system for real-time speech translation designed for multilingual content processing. The system supports multiple input formats, automatically detects the source language, translates speech into multiple Indian languages, and provides both text and audio outputs.
 
